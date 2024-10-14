@@ -19,5 +19,5 @@ jobs:
     - name: Build
       run: |
           sudo apt-get install libpcap-dev
-          cargo build --verbose
-
+          cargo build
+          ls target/release/
