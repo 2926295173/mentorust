@@ -20,4 +20,4 @@ jobs:
       run: |
           sudo apt-get install libpcap-dev
           cargo build
-          ls
+          ls -al target/
