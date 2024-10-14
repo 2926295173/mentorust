@@ -21,3 +21,8 @@ jobs:
           sudo apt-get install libpcap-dev
           cargo build --release --target-dir ./target
           ls -al target/release/
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: mentorust
+        path: ./target/release  # 请根据你实际编译后文件的路径进行修改
