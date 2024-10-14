@@ -17,5 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: cargo build --verbose
+      run: |
+          sudo apt-get install libpcap-dev
+          cargo build --verbose
 
