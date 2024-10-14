@@ -25,4 +25,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: mentorust
-        path: ./target/release  # 请根据你实际编译后文件的路径进行修改
+        path: ./target/release/mentorust  # 请根据你实际编译后文件的路径进行修改
